@@ -16,6 +16,15 @@ class MyBot {
             await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
         }
     }
+
+/**
+     * Send suggested actions to the user.
+     * @param {TurnContext} turnContext A TurnContext instance containing all the data needed for processing this conversation turn.
+     */
+    async sendSuggestedActions(turnContext) {
+        var reply = MessageFactory.suggestedActions(['Red', 'Yellow', 'Blue'], 'What is the best color?');
+        await turnContext.sendActivity(reply);
+    }
 }
 
 module.exports.MyBot = MyBot;
