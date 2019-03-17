@@ -1,15 +1,24 @@
 {
     "name": "echobot",
+    "description": "",
     "services": [
         {
             "type": "endpoint",
             "name": "development",
             "endpoint": "http://localhost:3978/api/messages",
-            "appId": "",
-            "appPassword": "",
+            "appId": "ee6f5d7b-b09a-4541-a97c-59a4bb4447f3",
+            "appPassword": "buqXB88^{wggoDQVQI225!]",
             "id": "1"
+        },
+        {
+            "type": "endpoint",
+            "endpoint": "http://localhost:3978",
+            "name": "firstbot",
+            "id": "45"
         }
     ],
     "padlock": "",
-    "version": "2.0"
+    "version": "2.0",
+    "path": "C:\\myJsBots\\echobot\\echobot.bot",
+    "overrides": null
 }
